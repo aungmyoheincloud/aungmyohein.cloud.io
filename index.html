@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
         }
         header {
             background: #007bff; /* Blue header background */
@@ -37,8 +38,9 @@
             text-decoration: underline;
         }
         section {
-            padding: 1.5em 0; /* Reduced padding for sections */
+            padding: 1em 0; /* Reduced padding for sections */
             margin-top: 60px; /* Space for fixed header */
+            scroll-padding-top: 60px; /* Space to account for fixed header */
         }
         .container {
             max-width: 1200px;
@@ -46,10 +48,10 @@
             padding: 0 1em;
         }
         .skills, .experience, .education, .certifications, .recordings {
-            margin-top: 1em; /* Reduced spacing between sections */
+            margin-top: 0.5em; /* Reduced spacing between sections */
         }
         .skill, .project, .job, .education-item, .certificate, .recording {
-            margin-bottom: 0.75em; /* Reduced spacing between items */
+            margin-bottom: 0.5em; /* Reduced spacing between items */
         }
         footer {
             background: #333;
