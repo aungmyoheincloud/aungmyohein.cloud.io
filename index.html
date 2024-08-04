@@ -9,167 +9,180 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background: #333;
             color: #fff;
-            padding: 1rem;
-            text-align: center;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
-        .container {
-            padding: 2rem;
-        }
-        h1, h2, h3 {
-            color: #333;
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
         }
         nav {
-            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
         nav a {
-            margin: 0 1rem;
-            color: #333;
+            color: #fff;
             text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
         }
         section {
-            margin-bottom: 2rem;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
+            padding: 5rem 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .profile-pic {
             width: 150px;
             border-radius: 50%;
+        }
+        .certificates a {
+            color: #333;
+            text-decoration: none;
+        }
+        .certificates a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Aung Myo Hein</h1>
-        <p>Cloud/DevOps Engineer</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Professional Experience</a>
+            <a href="#poc">Proof-of-Concepts</a>
+            <a href="#recordings">Recordings</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#skills">Skills</a>
-        <a href="#professional-experience">Professional Experience</a>
-        <a href="#proof-of-concepts">Proof-of-Concepts</a>
-        <a href="#recordings">Recordings</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about-me">
-            <h2>About Me</h2>
-            <img src="67c7c816-5392-49b3-949f-3be19b93cd43.jpeg" alt="Aung Myo Hein" class="profile-pic">
-            <p>With over a decade of IT experience, I specialize in networking, IoT deployment, server administration, and ELV systems. My technical expertise includes Kubernetes, Istio, Helm, cloud computing, CI/CD, Infrastructure as Code (IaC) using Terraform, GitHub, HashiCorp Vault, Jenkins, Docker, Linux, and observability tools with extensive hands-on proof-of-concept (POC) experience.</p>
-            <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
-            <p>Phone: <a href="tel:+6584141639">+65 84141639</a></p>
-            <p>Location: 460521, Singapore</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aung-myo-hein-55a050278/" target="_blank">Aung Myo Hein's LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/amhmaster" target="_blank">amhmaster</a></p>
-        </section>
-
-        <section id="education">
-            <h2>Education Background</h2>
-            <h3>Diploma in Computer Networking</h3>
-            <p>Singapore Polytechnic, Singapore (2014 – 2015)</p>
-            <h3>Bachelor Of Science in Chemistry</h3>
-            <p>Pakokku University, Myanmar (2005 – 2008)</p>
-            <h3>Diploma in Teacher Education</h3>
-            <p>Magway Education Degree College, Myanmar (2002 – 2004)</p>
-        </section>
-
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <ul>
-                <li><a href="https://www.credly.com/badges/d3e55363-6183-438e-a3ff-2783f9489609/linked_in?t=sh5gwr" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
-                <li><a href="https://www.credly.com/badges/021ddbe3-1449-4139-abac-e702fde93656" target="_blank">HashiCorp Certified: Terraform Associate (003)</a></li>
-                <li><a href="https://www.credly.com/badges/7372cfa0-72b7-4c30-ad5b-6f193e0b3646/linked_in_profile" target="_blank">Certified Kubernetes Administrator (CKA)</a></li>
-                <li><a href="https://www.credly.com/badges/ae6e411b-ad8f-49bc-8c0e-1779725f14af/linked_in_profile" target="_blank">Certified Kubernetes Application Developer (CKAD)</a></li>
-                <li><a href="https://www.credly.com/badges/ba01e480-2220-4eb1-b1c8-847e77c0fbb2/linked_in_profile" target="_blank">Certified Kubernetes Security Specialist (CKS)</a></li>
-                <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified MikroTik Routing Engineer (MTCRE)</a></li>
-                <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified Network Associate (MTCNA)</a></li>
-                <li><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/427418917960CSBH" target="_blank">Cisco Certified Network Switching and Associate (CCNA)</a></li>
-            </ul>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Server Administration</li>
-                <li>Networking & Security</li>
-                <li>Cloud Computing</li>
-                <li>Kubernetes</li>
-                <li>Istio</li>
-                <li>Helm</li>
-                <li>AWS</li>
-                <li>CI/CD (GitHub Actions)</li>
-                <li>Infrastructure-as-Code (Terraform)</li>
-                <li>Docker</li>
-                <li>Linux</li>
-                <li>HashiCorp Vault</li>
-                <li>Ansible</li>
-                <li>Jenkins</li>
-                <li>Prometheus, Grafana</li>
-            </ul>
-        </section>
-
-        <section id="professional-experience">
-            <h2>Professional Experience</h2>
-            <h3>System Engineer, Hyperstatiq Pte Ltd, Singapore (2023-01 to 2024-03)</h3>
-            <ul>
-                <li>Projects: Artyzen Hotel Project, 7 Cuscaden Rd, Singapore.</li>
-                <li>Responsibilities: Installation and configuration of Linux systems, system maintenance, backup implementation, system performance monitoring, troubleshooting system security, patching, upgrades, package installation, and utilization of system monitoring tools such as Zabbix; Proficient in networking including TCP/IP, DHCP, NAT, DNS, and Routing & Switching Configuration; Provide designs and plans for ELV systems and other system requirements, including network/security, and systems administration for edge-devices; Coordinate with architects, cross-department engineering teams, and other stakeholders to seamlessly integrate systems during the project timeline.</li>
-            </ul>
-
-            <h3>IT Supervisor (Solution Lead), Terraysss Solution Ltd, Phnom Penh, Cambodia (2017-01 to 2022-12)</h3>
-            <ul>
-                <li>Projects: Won Majestic Hotel & Casino Project, Phum 4, Sangkat 4, 2 Thnou St Krong Preah Sihanouk, Cambodia; The Gateway Phnom Penh, Russian Federation Blvd (110), Phnom Penh; Urban Village, Samdech Hun Sen Blvd and National Road 2, Phnom Penh, Cambodia; Yangon Convention Center Project (YCC), Yangon, Myanmar; Myingyan 225MW Combined Cycle Power Plant Project, Taungtha, Myingyan district, Myanmar.</li>
-            </ul>
-
-            <h3>IT Engineer (Network/System), HI Telecom Engineering Group, Yangon, Myanmar (2016-02 to 2016-12)</h3>
-            <ul>
-                <li>Projects: St John Hyper Market Project, Ocean Super Center, Yangon, Myanmar.</li>
-                <li>Responsibilities: Support and optimize servers and systems, including network infrastructure and security systems in both On-premises and Cloud Environments; Collaborate as a technical professional to plan, design, deploy, and maintain multiple services; Liaise with solution architects, field engineers, and engineering managers to seamlessly integrate systems and devices; Install and configure networking devices, conduct server administration, and implement security configurations such as Firewall, NACLs, Security Groups, etc.; Oversee the workload of other engineers, providing problem-solving assistance and relevant strategies to alleviate their burdens; Provide comprehensive user training for ELV Systems; Offer ongoing support and troubleshooting for ELV systems and IT infrastructure.</li>
-            </ul>
-
-            <h3>Data Processor, Plant Engineering Construction (PEC) Ltd, Singapore (2012-06 to 2015-06)</h3>
-            <ul>
-                <li>Responsibilities: Managed document registers and controlled document flow for the project; Prepared and transmitted drawing transmittals to stakeholders as needed; Provided administrative support to the project team, including data processing tasks; Assisted in maintaining project documentation and ensuring accurate record-keeping.</li>
-            </ul>
-
-            <h3>IT Technician, NAWARAT Global Technology Co., Ltd, Yangon, Myanmar (2008 to 2012)</h3>
-            <ul>
-                <li>Responsibilities: Set up workstations with computers and peripherals for users; Checked computer hardware for functionality and performed troubleshooting as needed; Installed and configured software and hardware on workstations to meet user requirements; Configured servers and clients for internet cafe operations, ensuring smooth network functionality; Set up and maintained network infrastructure including routers, switches, and access points; Ensured network security by installing and maintaining security software and implementing best practices; Responded to IT requests from users regarding hardware, software, and network issues; Provided technical assistance and troubleshooting.</li>
-            </ul>
-        </section>
-
-        <section id="proof-of-concepts">
-            <h2>Proof-of-Concepts (Hands-on Experiences)</h2>
-            <p>Two years of experience with Linux, Kubernetes, Istio, Docker, Helm, Git, Terraform, HashiCorp Vault, and various AWS services (including EC2, ECS, EKS, RDS, ALB, etc.), along with proficiency in Zabbix, Prometheus, and Grafana, gained through mentorship on HelloCloud.io. Working towards achieving key milestones by the end of 2025.</p>
-            <p>For detailed notes and projects, please refer to my <a href="https://www.notion.so/luhein/cf609c997d5047b5b550dbbc40995abf?v=13df6c332f624675b1fc7608c5ef6e61" target="_blank">Notion page on cloud/DevOps experience</a>.</p>
-        </section>
-
-        <section id="recordings">
-            <h2>Recordings</h2>
-            <p>Coming soon...</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you have any questions or would like to get in touch, please reach out to me via email or phone.</p>
-            <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
-            <p>Phone: <a href="tel:+6584141639">+65 84141639</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Aung Myo Hein. All rights reserved.</p>
-    </footer>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="67c7c816-5392-49b3-949f-3be19b93cd43.jpeg" alt="Aung Myo Hein" class="profile-pic">
+        <p>With over a decade of IT experience, I specialize in networking, IoT deployment, server administration, and ELV systems. My technical expertise includes Kubernetes, Istio, Helm, cloud computing, CI/CD, Infrastructure as Code (IaC) using Terraform, GitHub, HashiCorp Vault, Jenkins, Docker, Linux, and observability tools with extensive hands-on proof-of-concept (POC) experience.</p>
+    </section>
+    
+    <section id="education">
+        <h2>Education Background</h2>
+        <ul>
+            <li>Diploma in Computer Networking, Singapore Polytechnic, Singapore (2014 – 2015)</li>
+            <li>Bachelor of Science in Chemistry, Pakokku University, Myanmar (2005 – 2008)</li>
+            <li>Diploma in Teacher Education, Magway Education Degree College, Myanmar (2002 – 2004)</li>
+        </ul>
+    </section>
+    
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <ul>
+            <li><a href="https://www.credly.com/badges/d3e55363-6183-438e-a3ff-2783f9489609/linked_in?t=sh5gwr" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
+            <li><a href="https://www.credly.com/badges/021ddbe3-1449-4139-abac-e702fde93656" target="_blank">HashiCorp Certified: Terraform Associate (003)</a></li>
+            <li><a href="https://www.credly.com/badges/7372cfa0-72b7-4c30-ad5b-6f193e0b3646/linked_in_profile" target="_blank">Certified Kubernetes Administrator (CKA)</a></li>
+            <li><a href="https://www.credly.com/badges/ae6e411b-ad8f-49bc-8c0e-1779725f14af/linked_in_profile" target="_blank">Certified Kubernetes Application Developer (CKAD)</a></li>
+            <li><a href="https://www.credly.com/badges/ba01e480-2220-4eb1-b1c8-847e77c0fbb2/linked_in_profile" target="_blank">Certified Kubernetes Security Specialist (CKS)</a></li>
+            <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified MikroTik Routing Engineer (MTCRE)</a></li>
+            <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified Network Associate (MTCNA)</a></li>
+            <li><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/427418917960CSBH" target="_blank">Cisco Certified Network Switching and Associate (CCNA)</a></li>
+        </ul>
+    </section>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Server Administration</li>
+            <li>Networking & Security</li>
+            <li>Cloud Computing</li>
+            <li>Kubernetes</li>
+            <li>Istio</li>
+            <li>Helm</li>
+            <li>AWS</li>
+            <li>CI/CD (GitHub Actions)</li>
+            <li>Infrastructure as Code (Terraform)</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>HashiCorp Vault</li>
+            <li>Ansible</li>
+            <li>Jenkins</li>
+            <li>Prometheus, Grafana</li>
+        </ul>
+    </section>
+    
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        
+        <h3>System Engineer</h3>
+        <p><strong>Hyperstatiq Pte Ltd, Singapore</strong> (2023-01 to 2024-03)</p>
+        <ul>
+            <li>Projects: Artyzen Hotel Project, 7 Cuscaden Rd, Singapore</li>
+            <li>Responsibilities: Installation and configuration of Linux systems, system maintenance, backup implementation, system performance monitoring, troubleshooting system security, patching, upgrades, package installation, and utilization of system monitoring tools such as Zabbix; Proficient in networking including TCP/IP, DHCP, NAT, DNS, and Routing & Switching Configuration; Provide designs and plans for ELV systems and other system requirements, including network/security, and systems administration for edge-devices; Coordinate with architects, cross-department engineering teams, and other stakeholders to seamlessly integrate systems during the project timeline.</li>
+        </ul>
+        
+        <h3>IT Supervisor (Solution Lead)</h3>
+        <p><strong>Terraysss Solution Ltd, Phnom Penh, Cambodia</strong> (2017-01 to 2022-12)</p>
+        <ul>
+            <li>Projects: 
+                <ul>
+                    <li>Won Majestic Hotel & Casino Project, Phum 4, Sangkat 4, 2 Thnou St Krong Preah Sihanouk, Cambodia</li>
+                    <li>The Gateway Phnom Penh, Russian Federation Blvd (110), Phnom Penh</li>
+                    <li>Urban Village, Samdech Hun Sen Blvd and National Road 2, Phnom Penh, Cambodia</li>
+                    <li>Yangon Convention Center Project (YCC), Yangon, Myanmar</li>
+                    <li>Myingyan 225MW Combined Cycle Power Plant Project, Taungtha, Myingyan district, Myanmar</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>IT Engineer (Network/System)</h3>
+        <p><strong>HI Telecom Engineering Group, Yangon, Myanmar</strong> (2016-02 to 2016-12)</p>
+        <ul>
+            <li>Projects: St John Hyper Market Project, Ocean Super Center, Yangon, Myanmar</li>
+            <li>Responsibilities: Support and optimize servers and systems, including network infrastructure and security systems in both On-premises and Cloud Environments; Collaborate as a technical professional to plan, design, deploy, and maintain multiple services; Liaise with solution architects, field engineers, and engineering managers to seamlessly integrate systems and devices; Install and configure networking devices, conduct server administration, and implement security configurations such as Firewall, NACLs, Security Groups, etc.; Oversee the workload of other engineers, providing problem-solving assistance and relevant strategies to alleviate their burdens; Provide comprehensive user training for ELV Systems; Offer ongoing support and troubleshooting for ELV systems and IT infrastructure.</li>
+        </ul>
+        
+        <h3>Data Processor</h3>
+        <p><strong>Plant Engineering Construction (PEC) Ltd, Singapore</strong> (2012-06 to 2015-06)</p>
+        <ul>
+            <li>Responsibilities: Managed document registers and controlled document flow for the project; Prepared and transmitted drawing transmittals to stakeholders as needed; Provided administrative support to the project team, including data processing tasks; Assisted in maintaining project documentation and ensuring accurate record-keeping.</li>
+        </ul>
+        
+        <h3>IT Technician</h3>
+        <p><strong>NAWARAT Global Technology Co., Ltd, Yangon, Myanmar</strong> (2008 to 2012)</p>
+        <ul>
+            <li>Responsibilities: Set up workstations with computers and peripherals for users; Checked computer hardware for functionality and performed troubleshooting as needed; Installed and configured software and hardware on workstations to meet user requirements; Configured servers and clients for internet cafe operations, ensuring smooth network functionality; Set up and maintained network infrastructure including routers, switches, and access points; Ensured network security by installing and maintaining security software and implementing best practices; Responded to IT requests from users regarding hardware, software, and network issues; Provided technical assistance and troubleshooting.</li>
+        </ul>
+    </section>
+    
+    <section id="poc">
+        <h2>Proof-of-Concepts (Hands-on Experiences)</h2>
+        <ul>
+            <li>Two years of experience with Linux, Kubernetes, Istio, Docker, Helm, Git, Terraform, HashiCorp Vault, and various AWS services (including EC2, ECS, EKS, RDS, ALB, etc.), along with proficiency in Zabbix, Prometheus, and Grafana, gained through mentorship on HelloCloud.io. Working towards achieving key milestones by the end of 2025.</li>
+        </ul>
+        <a href="https://www.notion.so/luhein/cf609c997d5047b5b550dbbc40995abf?v=13df6c332f624675b1fc7608c5ef6e61">Visit My Notion Page for Detailed Notes</a>
+    </section>
+    
+    <section id="recordings">
+        <h2>Recordings</h2>
+        <p>Recordings of my tech presentations will be available here. [To be updated]</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
+        <p>Phone: <a href="tel:+6584141639">+65 84141639</a></p>
+        <p>Location: 460521, Singapore</p>
+        <p><a href="https://www.linkedin.com/in/aung-myo-hein-55a050278/">LinkedIn Profile</a></p>
+    </section>
+    
 </body>
 </html>
