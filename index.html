@@ -38,10 +38,10 @@
             margin: 0 auto;
             padding: 0 1em;
         }
-        .skills, .projects {
+        .skills, .projects, .experience, .education, .certificates {
             margin-top: 2em;
         }
-        .skill, .project {
+        .skill, .project, .job, .education-item, .certificate {
             margin-bottom: 1em;
         }
         footer {
@@ -53,17 +53,22 @@
             bottom: 0;
             width: 100%;
         }
+        a {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Aung Myo Hein</h1>
-            <p>Cloud and DevOps Engineer</p>
+            <p>Cloud/DevOps Engineer</p>
             <nav>
-                <a href="#about">About</a>
+                <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#certificates">Certificates</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -72,47 +77,113 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I’m Aung Myo Hein, a Cloud and DevOps Engineer with over a decade of experience in IT. I specialize in Kubernetes, cloud computing, and infrastructure automation. Welcome to my portfolio!</p>
+            <p>With over a decade of IT experience, I specialize in networking, IoT deployment, server administration, and ELV systems. My technical expertise includes Kubernetes, Istio, Helm, cloud computing, CI/CD, Infrastructure as Code (IaC) using Terraform, GitHub, HashiCorp Vault, Jenkins, Docker, Linux, and observability tools with extensive hands-on proof-of-concept (POC) experience.</p>
         </div>
     </section>
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skill">
-                <h3>Cloud Computing</h3>
-                <p>AWS, GCP, Azure</p>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Server Administration</li>
+                <li>Networking & Security</li>
+                <li>Cloud Computing (AWS, GCP, Azure)</li>
+                <li>Kubernetes, Istio, Helm</li>
+                <li>CI/CD (GitHub Actions, Jenkins)</li>
+                <li>Infrastructure as Code (Terraform)</li>
+                <li>Docker, Linux</li>
+                <li>HashiCorp Vault, Ansible</li>
+                <li>Prometheus, Grafana</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>System Engineer</h3>
+                <p><strong>Hyperstatiq Pte Ltd, Singapore</strong> (Jan 2023 – Mar 2024)</p>
+                <ul>
+                    <li>Installation and configuration of Linux systems, system maintenance, backup implementation, system performance monitoring, troubleshooting system security, patching, upgrades, package installation, and utilization of system monitoring tools such as Zabbix.</li>
+                    <li>Proficient in networking including TCP/IP, DHCP, NAT, DNS, and Routing & Switching Configuration.</li>
+                    <li>Provided designs and plans for ELV systems and other system requirements, including network/security, and systems administration for edge-devices.</li>
+                    <li>Coordinated with architects, cross-department engineering teams, and other stakeholders to seamlessly integrate systems during the project timeline.</li>
+                </ul>
             </div>
-            <div class="skill">
-                <h3>Containerization</h3>
-                <p>Kubernetes, Docker, CRI-O, Containerd</p>
+            <div class="job">
+                <h3>IT Supervisor (Solution Lead)</h3>
+                <p><strong>Terraysss Solution Ltd, Phnom Penh, Cambodia</strong> (Jan 2017 – Dec 2022)</p>
+                <ul>
+                    <li>Worked on various projects including Majestic Hotel & Casino, The Gateway Phnom Penh, Urban Village, Yangon Convention Center, and Myingyan 225MW Combined Cycle Power Plant.</li>
+                </ul>
             </div>
-            <div class="skill">
-                <h3>Infrastructure Automation</h3>
-                <p>Terraform, Ansible, CI/CD</p>
+            <div class="job">
+                <h3>IT Engineer (Network/System)</h3>
+                <p><strong>HI Telecom Engineering Group, Yangon, Myanmar</strong> (Feb 2016 – Dec 2016)</p>
+                <ul>
+                    <li>Managed network infrastructure, server administration, security configurations, and provided technical assistance.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Data Processor</h3>
+                <p><strong>Plant Engineering Construction (PEC) Ltd, Singapore</strong> (Jun 2012 – Jun 2015)</p>
+                <ul>
+                    <li>Managed document registers, prepared and transmitted drawing transmittals, and provided administrative support to the project team.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>IT Technician</h3>
+                <p><strong>NAWARAT Global Technology Co., Ltd, Yangon, Myanmar</strong> (2008 – 2012)</p>
+                <ul>
+                    <li>Set up workstations, configured servers, maintained network infrastructure, and provided technical assistance and troubleshooting.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="education" class="education">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project One</h3>
-                <p>Description of your project, the technologies used, and any achievements.</p>
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Diploma in Computer Networking</h3>
+                <p><strong>Singapore Polytechnic, Singapore</strong> (2014 – 2015)</p>
             </div>
-            <div class="project">
-                <h3>Project Two</h3>
-                <p>Description of another project, the challenges faced, and solutions implemented.</p>
+            <div class="education-item">
+                <h3>Bachelor of Science in Chemistry</h3>
+                <p><strong>Pakokku University, Myanmar</strong> (2005 – 2008)</p>
             </div>
-            <!-- Add more projects as needed -->
+            <div class="education-item">
+                <h3>Diploma in Teacher Education</h3>
+                <p><strong>Magway Education Degree College, Myanmar</strong> (2002 – 2004)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2>Certificates</h2>
+            <ul>
+                <li>AWS Certified Solutions Architect – Associate</li>
+                <li>HashiCorp Certified: Terraform Associate (003)</li>
+                <li>Certified Kubernetes Administrator (CKA)</li>
+                <li>Certified Kubernetes Application Developer (CKAD)</li>
+                <li>Certified Kubernetes Security Specialist (CKS)</li>
+                <li>Certified MikroTik Routing Engineer (MTCRE)</li>
+                <li>Certified Network Associate (MTCNA)</li>
+                <li>Cisco Certified Network Switching and Associate (CCNA)</li>
+            </ul>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="mailto:aungmyohein@example.com">aungmyohein@example.com</a></p>
+            <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
+            <p>Phone: +65 8414 1639</p>
+            <p>Location: 460521, Singapore</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aungmyohein" target="_blank">Aung Myo Hein's LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/amhmaster" target="_blank">GitHub Profile</a></p>
         </div>
     </section>
 
