@@ -3,13 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video</title>
+    <title>Aung Myo Hein | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1em;
+        }
+        .skills, .projects {
+            margin-top: 2em;
+        }
+        .skill, .project {
+            margin-bottom: 1em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Video</h1>
-    <video width="640" height="480" controls>
-        <source src="Static Role with Vault AWS Secrets Engine.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <header>
+        <div class="container">
+            <h1>Aung Myo Hein</h1>
+            <p>Cloud and DevOps Engineer</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I’m Aung Myo Hein, a Cloud and DevOps Engineer with over a decade of experience in IT. I specialize in Kubernetes, cloud computing, and infrastructure automation. Welcome to my portfolio!</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Cloud Computing</h3>
+                <p>AWS, GCP, Azure</p>
+            </div>
+            <div class="skill">
+                <h3>Containerization</h3>
+                <p>Kubernetes, Docker, CRI-O, Containerd</p>
+            </div>
+            <div class="skill">
+                <h3>Infrastructure Automation</h3>
+                <p>Terraform, Ansible, CI/CD</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project One</h3>
+                <p>Description of your project, the technologies used, and any achievements.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Description of another project, the challenges faced, and solutions implemented.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me via email at <a href="mailto:aungmyohein@example.com">aungmyohein@example.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aung Myo Hein. All rights reserved.</p>
+    </footer>
 </body>
 </html>
