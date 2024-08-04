@@ -38,20 +38,20 @@
             text-decoration: underline;
         }
         section {
-            padding: 1em 0; /* Reduced padding for sections */
-            margin-top: 60px; /* Space for fixed header */
-            scroll-padding-top: 60px; /* Space to account for fixed header */
+            padding: 2em 1em; /* Padding around sections */
+            margin-top: 70px; /* Space for fixed header */
+            scroll-padding-top: 70px; /* Ensure fixed header doesn't cover content */
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1em;
         }
-        .skills, .experience, .education, .certifications, .recordings {
-            margin-top: 0.5em; /* Reduced spacing between sections */
+        .skills, .experience, .education, .certifications, .recordings, .contact {
+            margin-top: 1em; /* Reduced spacing between sections */
         }
         .skill, .project, .job, .education-item, .certificate, .recording {
-            margin-bottom: 0.5em; /* Reduced spacing between items */
+            margin-bottom: 1em; /* Spacing between items */
         }
         footer {
             background: #333;
@@ -191,60 +191,58 @@
     </section>
 
     <section id="certifications" class="section">
-    <div class="container">
-        <h2>Certifications</h2>
-        <ul>
-            <li><a href="https://www.credly.com/badges/d3e55363-6183-438e-a3ff-2783f9489609/linked_in?t=sh5gwr" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
-            <li><a href="https://www.credly.com/badges/021ddbe3-1449-4139-abac-e702fde93656" target="_blank">HashiCorp Certified: Terraform Associate (003)</a></li>
-            <li><a href="https://www.credly.com/badges/7372cfa0-72b7-4c30-ad5b-6f193e0b3646/linked_in_profile" target="_blank">Certified Kubernetes Administrator (CKA)</a></li>
-            <li><a href="https://www.credly.com/badges/ae6e411b-ad8f-49bc-8c0e-1779725f14af/linked_in_profile" target="_blank">Certified Kubernetes Application Developer (CKAD)</a></li>
-            <li><a href="https://www.credly.com/badges/ba01e480-2220-4eb1-b1c8-847e77c0fbb2/linked_in_profile" target="_blank">Certified Kubernetes Security Specialist (CKS)</a></li>
-            <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified MikroTik Routing Engineer (MTCRE)</a></li>
-            <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified Network Associate (MTCNA)</a></li>
-            <li><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/427418917960CSBH" target="_blank">Cisco Certified Network Switching and Associate (CCNA)</a></li>
-        </ul>
-    </div>
-</section>
-
-<section id="recordings" class="section">
-    <div class="container">
-        <h2>Recordings</h2>
-        <p>Here you can find recordings of my technical presentations:</p>
-        <div class="video">
-            <h3>Video Title 1</h3>
-            <video controls>
-                <source src="path/to/your-video-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 1.</p>
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li><a href="https://www.credly.com/badges/d3e55363-6183-438e-a3ff-2783f9489609/linked_in?t=sh5gwr" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
+                <li><a href="https://www.credly.com/badges/021ddbe3-1449-4139-abac-e702fde93656" target="_blank">HashiCorp Certified: Terraform Associate (003)</a></li>
+                <li><a href="https://www.credly.com/badges/7372cfa0-72b7-4c30-ad5b-6f193e0b3646/linked_in_profile" target="_blank">Certified Kubernetes Administrator (CKA)</a></li>
+                <li><a href="https://www.credly.com/badges/ae6e411b-ad8f-49bc-8c0e-1779725f14af/linked_in_profile" target="_blank">Certified Kubernetes Application Developer (CKAD)</a></li>
+                <li><a href="https://www.credly.com/badges/ba01e480-2220-4eb1-b1c8-847e77c0fbb2/linked_in_profile" target="_blank">Certified Kubernetes Security Specialist (CKS)</a></li>
+                <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified MikroTik Routing Engineer (MTCRE)</a></li>
+                <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified Network Associate (MTCNA)</a></li>
+                <li><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/427418917960CSBH" target="_blank">Cisco Certified Network Switching and Associate (CCNA)</a></li>
+            </ul>
         </div>
-        <div class="video">
-            <h3>Video Title 2</h3>
-            <video controls>
-                <source src="path/to/your-video-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 2.</p>
+    </section>
+
+    <section id="recordings" class="section">
+        <div class="container">
+            <h2>Recordings</h2>
+            <p>Here you can find recordings of my technical presentations:</p>
+            <div class="video">
+                <h3>Video Title 1</h3>
+                <video controls>
+                    <source src="path/to/your-video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Caption or description for Video 1.</p>
+            </div>
+            <div class="video">
+                <h3>Video Title 2</h3>
+                <video controls>
+                    <source src="path/to/your-video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Caption or description for Video 2.</p>
+            </div>
+            <!-- Add more video sections as needed -->
         </div>
-        <!-- Add more video sections as needed -->
-    </div>
-</section>
+    </section>
 
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
-        <p>Phone: +65 8414 1639</p>
-        <p>Location: 460521, Singapore</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aung-myo-hein-55a050278/" target="_blank">Aung Myo Hein's LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/amhmaster" target="_blank">GitHub Profile</a></p>
-    </div>
-</section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
+            <p>Phone: +65 8414 1639</p>
+            <p>Location: 460521, Singapore</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aung-myo-hein-55a050278/" target="_blank">Aung Myo Hein's LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/amhmaster" target="_blank">GitHub Profile</a></p>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Aung Myo Hein. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Aung Myo Hein. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-    
