@@ -3,207 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aung Myo Hein | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Aung Myo Hein's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
         }
         header {
-            background: #007bff; /* Updated header color to blue */
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
+            background-color: #007BFF; /* Blue color */
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
-        header h1 {
-            margin: 0;
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        nav {
-            margin: 0.5em 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1em;
-            color: #fff;
+        .nav-container a {
+            color: white;
             text-decoration: none;
+            padding: 14px 20px;
+            display: block;
         }
-        section {
-            padding: 1em 0; /* Reduced padding between sections */
+        .nav-container a:hover {
+            background-color: #0056b3;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1em;
+            padding: 20px;
+            margin-top: 60px; /* Space for the fixed header */
         }
-        .skills, .projects, .experience, .education, .certificates, .recordings {
-            margin-top: 0.5em; /* Reduced vertical spacing between sections */
+        .section {
+            margin-bottom: 40px; /* Reduced gap between sections */
         }
-        .skill, .project, .job, .education-item, .certificate, .recording {
-            margin-bottom: 0.5em; /* Reduced vertical spacing */
+        .video {
+            margin-bottom: 20px;
         }
         footer {
-            background: #333;
-            color: #fff;
+            background-color: #007BFF; /* Blue color */
+            color: white;
             text-align: center;
-            padding: 1em 0;
-            position: fixed;
+            padding: 10px 0;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
-        a {
-            color: #007bff;
-        }
-        .recordings .video {
-            margin-bottom: 1em; /* Adjust spacing between videos */
-        }
-        .recordings h3 {
-            margin: 0.5em 0; /* Adjust margin for video titles */
-        }
-        .recordings p {
-            margin: 0.5em 0; /* Adjust margin for video captions */
-        }
-        .profile-picture {
-            width: 150px;
-            height: 150px;
+        .profile-img {
+            width: 200px;
+            height: auto;
             border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1em;
-        }
-        .profile-container {
-            text-align: center;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Aung Myo Hein</h1>
-            <p>Cloud/DevOps Engineer</p>
-            <nav>
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#recordings">Recordings</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
 
-    <section id="about">
-        <div class="container profile-container">
-            <h2>About Me</h2>
-            <img src="67c7c816-5392-49b3-949f-3be19b93cd43.jpeg" alt="Aung Myo Hein" class="profile-picture">
-            <p>With over a decade of IT experience, I specialize in networking, IoT deployment, server administration, and ELV systems. My technical expertise includes Kubernetes, Istio, Helm, cloud computing, CI/CD, Infrastructure as Code (IaC) using Terraform, GitHub, HashiCorp Vault, Jenkins, Docker, Linux, and observability tools with extensive hands-on proof-of-concept (POC) experience.</p>
-        </div>
-    </section>
+<header>
+    <div class="nav-container">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#recordings">Recordings</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Server Administration</li>
-                <li>Networking & Security</li>
-                <li>Cloud Computing (AWS, GCP, Azure)</li>
-                <li>Kubernetes, Istio, Helm</li>
-                <li>CI/CD (GitHub Actions, Jenkins)</li>
-                <li>Infrastructure as Code (Terraform)</li>
-                <li>Docker, Linux</li>
-                <li>HashiCorp Vault, Ansible</li>
-                <li>Prometheus, Grafana</li>
-            </ul>
-        </div>
-    </section>
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>With over a decade of IT experience, I specialize in networking, IoT deployment, server administration, and ELV systems. My technical expertise includes Kubernetes, Istio, Helm, cloud computing, CI/CD, Infrastructure as Code (IaC) using Terraform, GitHub, HashiCorp Vault, Jenkins, Docker, Linux, and observability tools with extensive hands-on proof-of-concept (POC) experience.</p>
+        <img src="67c7c816-5392-49b3-949f-3be19b93cd43.jpeg" alt="Aung Myo Hein" class="profile-img">
+    </div>
+</section>
 
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <h3>System Engineer</h3>
-                <p><strong>Hyperstatiq Pte Ltd, Singapore</strong> (Jan 2023 – Mar 2024)</p>
-                <ul>
-                    <li>Installation and configuration of Linux systems, system maintenance, backup implementation, system performance monitoring, troubleshooting system security, patching, upgrades, package installation, and utilization of system monitoring tools such as Zabbix.</li>
-                    <li>Proficient in networking including TCP/IP, DHCP, NAT, DNS, and Routing & Switching Configuration.</li>
-                    <li>Provided designs and plans for ELV systems and other system requirements, including network/security, and systems administration for edge-devices.</li>
-                    <li>Coordinated with architects, cross-department engineering teams, and other stakeholders to seamlessly integrate systems during the project timeline.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>IT Supervisor (Solution Lead)</h3>
-                <p><strong>Terraysss Solution Ltd, Phnom Penh, Cambodia</strong> (Jan 2017 – Dec 2022)</p>
-                <ul>
-                    <li>Worked on various projects including Majestic Hotel & Casino, The Gateway Phnom Penh, Urban Village, Yangon Convention Center, and Myingyan 225MW Combined Cycle Power Plant.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>IT Engineer (Network/System)</h3>
-                <p><strong>HI Telecom Engineering Group, Yangon, Myanmar</strong> (Feb 2016 – Dec 2016)</p>
-                <ul>
-                    <li>Managed network infrastructure, server administration, security configurations, and provided technical assistance.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Data Processor</h3>
-                <p><strong>Plant Engineering Construction (PEC) Ltd, Singapore</strong> (Jun 2012 – Jun 2015)</p>
-                <ul>
-                    <li>Managed document registers, prepared and transmitted drawing transmittals, and provided administrative support to the project team.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>IT Technician</h3>
-                <p><strong>NAWARAT Global Technology Co., Ltd, Yangon, Myanmar</strong> (2008 – 2012)</p>
-                <ul>
-                    <li>Set up workstations, configured servers, maintained network infrastructure, and provided technical assistance and troubleshooting.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<section id="education" class="section">
+    <div class="container">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>2014 – 2015:</strong> Diploma in Computer Networking, Singapore Polytechnic, Singapore</li>
+            <li><strong>2005 – 2008:</strong> Bachelor Of Science in Chemistry, Pakokku University, Myanmar</li>
+            <li><strong>2002 – 2004:</strong> Diploma in Teacher Education, Magway Education Degree College, Myanmar</li>
+        </ul>
+    </div>
+</section>
 
-    <section id="education" class="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Diploma in Computer Networking</h3>
-                <p><strong>Singapore Polytechnic, Singapore</strong> (2014 – 2015)</p>
-            </div>
-            <div class="education-item">
-                <h3>Bachelor of Science in Chemistry</h3>
-                <p><strong>Pakokku University, Myanmar</strong> (2005 – 2008)</p>
-            </div>
-            <div class="education-item">
-                <h3>Diploma in Teacher Education</h3>
-                <p><strong>Magway Education Degree College, Myanmar</strong> (2002 – 2004)</p>
-            </div>
-        </div>
-    </section>
+<section id="certifications" class="section">
+    <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li><a href="https://www.credly.com/badges/d3e55363-6183-438e-a3ff-2783f9489609/linked_in?t=sh5gwr" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
+            <li><a href="https://www.credly.com/badges/021ddbe3-1449-4139-abac-e702fde93656" target="_blank">HashiCorp Certified: Terraform Associate (003)</a></li>
+            <li><a href="https://www.credly.com/badges/7372cfa0-72b7-4c30-ad5b-6f193e0b3646/linked_in_profile" target="_blank">Certified Kubernetes Administrator (CKA)</a></li>
+            <li><a href="https://www.credly.com/badges/ae6e411b-ad8f-49bc-8c0e-1779725f14af/linked_in_profile" target="_blank">Certified Kubernetes Application Developer (CKAD)</a></li>
+            <li><a href="https://www.credly.com/badges/ba01e480-2220-4eb1-b1c8-847e77c0fbb2/linked_in_profile" target="_blank">Certified Kubernetes Security Specialist (CKS)</a></li>
+            <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified MikroTik Routing Engineer (MTCRE)</a></li>
+            <li><a href="https://mikrotik.com/certificateSearch" target="_blank">Certified Network Associate (MTCNA)</a></li>
+            <li><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/427418917960CSBH" target="_blank">Cisco Certified Network Switching and Associate (CCNA)</a></li>
+        </ul>
+    </div>
+</section>
 
-    <section id="certificates" class="certificates">
-        <div class="container">
-            <h2>Certificates</h2>
-            <ul>
-                <li>AWS Certified Solutions Architect – Associate</li>
-                <li>HashiCorp Certified: Terraform Associate (003)</li>
-                <li>Certified Kubernetes Administrator (CKA)</li>
-                <li>Certified Kubernetes Application Developer (CKAD)</li>
-                <li>Certified Kubernetes Security Specialist (CKS)</li>
-                <li>Certified MikroTik Routing Engineer (MTCRE)</li>
-                <li>Certified Network Associate (MTCNA)</li>
-                <li>Cisco Certified Network Switching and Associate (CCNA)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="recordings" class="recordings">
+<section id="recordings" class="section">
     <div class="container">
         <h2>Recordings</h2>
         <p>Here you can find recordings of my technical presentations:</p>
-        <!-- Repeat this block for each video -->
         <div class="video">
-            <h3>Static Role with Vault AWS Secrets Engine</h3>
+            <h3>Video Title 1</h3>
             <video controls>
                 <source src="path/to/your-video-1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -218,164 +127,24 @@
             </video>
             <p>Caption or description for Video 2.</p>
         </div>
-        <div class="video">
-            <h3>Video Title 3</h3>
-            <video controls>
-                <source src="path/to/your-video-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 3.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 4</h3>
-            <video controls>
-                <source src="path/to/your-video-4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 4.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 5</h3>
-            <video controls>
-                <source src="path/to/your-video-5.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 5.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 6</h3>
-            <video controls>
-                <source src="path/to/your-video-6.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 6.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 7</h3>
-            <video controls>
-                <source src="path/to/your-video-7.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 7.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 8</h3>
-            <video controls>
-                <source src="path/to/your-video-8.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 8.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 9</h3>
-            <video controls>
-                <source src="path/to/your-video-9.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 9.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 10</h3>
-            <video controls>
-                <source src="path/to/your-video-10.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 10.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 11</h3>
-            <video controls>
-                <source src="path/to/your-video-11.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 11.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 12</h3>
-            <video controls>
-                <source src="path/to/your-video-12.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 12.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 13</h3>
-            <video controls>
-                <source src="path/to/your-video-13.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 13.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 14</h3>
-            <video controls>
-                <source src="path/to/your-video-14.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 14.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 15</h3>
-            <video controls>
-                <source src="path/to/your-video-15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 15.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 16</h3>
-            <video controls>
-                <source src="path/to/your-video-16.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 16.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 17</h3>
-            <video controls>
-                <source src="path/to/your-video-17.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 17.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 18</h3>
-            <video controls>
-                <source src="path/to/your-video-18.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 18.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 19</h3>
-            <video controls>
-                <source src="path/to/your-video-19.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 19.</p>
-        </div>
-        <div class="video">
-            <h3>Video Title 20</h3>
-            <video controls>
-                <source src="path/to/your-video-20.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Caption or description for Video 20.</p>
-        </div>
+        <!-- Add more video sections as needed -->
+    </div>
+</section>
 
-         <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
-            <p>Phone: +65 8414 1639</p>
-            <p>Location: 460521, Singapore</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aung-myo-hein-55a050278/" target="_blank">Aung Myo Hein's LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/amhmaster" target="_blank">GitHub Profile</a></p>
-        </div>
-    </section>
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:aungmyohein.cloud@gmail.com">aungmyohein.cloud@gmail.com</a></p>
+        <p>Phone: +65 8414 1639</p>
+        <p>Location: 460521, Singapore</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aung-myo-hein-55a050278/" target="_blank">Aung Myo Hein's LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/amhmaster" target="_blank">GitHub Profile</a></p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Aung Myo Hein. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Aung Myo Hein. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
